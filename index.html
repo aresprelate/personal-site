@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seditor</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+   <div class="back">
+   <button class="b1" onclick="openContainer()">About Me</button>
+   <button class="b2" onclick="openWork()">Work</button>
+   <button class="b3" onclick="openContact()">Contact</button>
+   <div class="contact" id="contact">
+    <img src="images.png" class="img">
+    <div class="title">
+      Contact Me
+    </div>
+    <div class="info">I am available in discord my id "<t class="id">Seditor#9761</t>".</div>
+    <button class="ok" onclick="closeContact()">OK</button>
+   </div>
+   <div class="container" id="container">
+    <div class="header">About Me</div>
+    <button class="close-button" onclick="closeContainer()">
+      &times;
+    </button>
+    <div class="text">Hi i am Seditor. I am a high school student and, I was interested in programming from a very young age i started learning html and later 
+      started learning other languages like python, javascript, css. My first project was a discord bot even tho it wasn't good, but it was 
+      a success. And now Im looking for new ideas for new project.</div>
+      </div>
+      <h1 class="gradient">Hi, I'm<p class="gradient2">Seditor</p></h1>
+     
+   </div>
+  </div>
+  <script>
+    let contact = document.getElementById('contact');
+    let container = document.getElementById('container');
+
+function openContainer(){
+  container.classList.add('open-container')
+}
+function closeContainer(){
+  container.classList.remove('open-container')
+};
+
+function openContact(){
+  contact.classList.add('open-contact')
+}
+function closeContact(){
+  contact.classList.remove('open-contact')
+}
+
+
+  </script>
+</body>
+</html>

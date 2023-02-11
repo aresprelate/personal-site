@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, blue, aqua, purple);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.b1{
+    background-color: transparent;
+    transition: 1.1s;
+    color: black;
+    border-color: transparent;
+    margin-left: 78%;
+}
+
+.b1:hover{
+    background-color: transparent;
+    color: white;
+    border-color: black;
+    cursor: pointer;
+}
+
+.b2{
+    background-color: transparent;
+    transition: 1.1s;
+    color: black;
+    border-color: transparent;
+    margin-left: 5%;
+}
+.b2:hover{
+    background-color: transparent;
+    color: white;
+    border-color: black;
+    cursor: pointer;
+}
+.b3{
+    background-color: transparent;
+    transition: 1.1s;
+    color: black;
+    border-color: transparent;
+    margin-left: 5%;
+}
+.b3:hover{
+    background-color: transparent;
+    color: white;
+    border-color: black;
+    cursor: pointer;
+}
+
+.container{
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 350px;
+    height: 300px;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+
+.open-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 350px;
+    height: 300px;
+    border-radius: 10%;
+}
+
+.close-button{
+    margin-left: 91%;
+    margin-top: 2%;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 50px;
+    width: 19px;
+    transition: 1.5s;
+}
+.close-button:hover{
+    margin-left: 91%;
+    margin-top: 2%;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 50px;
+    width: 19px;
+}
+
+.header{
+    margin-left: 41%;
+    font-size: larger;
+}
+.text{
+    font-size: large;
+    margin-left: 1%;
+    margin-top: 10%;
+    transition: 1.5s;
+}
+.text:hover{
+    font-size: large;
+    margin-left: 1%;
+    margin-top: 5%;
+    color: white;
+}
+
+.contact{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: black;
+    width: 350px;
+    height: 300px;
+    border-radius: 10%;
+    transition: 0.5s;
+}
+.open-contact{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: black;
+    width: 350px;
+    height: 300px;
+}
+.img{
+    margin-left: 43%;
+    width: 50px;
+    height: 45px;
+    border-radius: 50px;
+}
+
+.title{
+    margin-top: 2%;
+    margin-left: 37%;
+    font-size: 22px;
+}
+
+.info{
+    margin-top: 10%;
+    font-size: 17px;
+    margin-left: 1%;
+}
+.id{
+    transition: 1s;
+}
+.id:hover{
+    color: white;
+    margin-left: 1%;
+}
+
+.ok{
+    background-color: greenyellow;
+    color: white;
+    border-color: transparent;
+    margin-top: 20%;
+    margin-left: 42%;
+    border-radius: 15%;
+    border-width: 15px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.gradient{
+    font-size: 75px;
+    font-family: 'arial';
+    font: bold;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+.gradient2{
+    background: linear-gradient(to right, red, yellow, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
